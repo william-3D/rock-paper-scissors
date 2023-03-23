@@ -1,15 +1,15 @@
-function getComputerChoice (str) {
-    const randomNumber = Math.floor(Math.random() * 3) + 1;
+function getComputerChoices() {
+    const randomNumber = Math.floor(Math.random() * 3);
     
     switch(randomNumber){
+        case 0:
+            return = "Rock";
+            break;
         case 1:
-            computer = "Rock";
+            return = "Paper";
             break;
         case 2:
-            computer = "Paper";
-            break;
-        case 3:
-            computer = "Scissors";
+            return = "Scissors";
             break;
     }
     }
