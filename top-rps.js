@@ -1,3 +1,5 @@
+sign = window.prompt("Rock, paper or scissors?");
+
 const computerSelection = document.getElementById("computer-selection")
 const playerSelection = document.getElementById("player-selection")
 const roundResult = document.getElementById("result")
