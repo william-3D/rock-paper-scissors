@@ -5,18 +5,17 @@ const roundResult = document.getElementById("result")
 function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
     
-    switch(randomNumber){
-        case 0:
-            return "Rock";
-            break;
-        case 1:
-            return "Paper";
-            break;
-        case 2:
-            return "Scissors";
-            break;
+    if (randomNumber === 1){
+        computerSelection = "Rock";
+    }
+    if (randomNumber === 2){
+        computerSelection = "Paper";
+    }
+    if (randomNumber === 3){
+        computerSelection = "Scissors";
     }
 }
+
 
 function game() {
     function playRound (playerSelection, computerSelection) {
