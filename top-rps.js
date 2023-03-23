@@ -1,3 +1,7 @@
+const computerSelection = document.getElementById("computer-selection")
+const playerSelection = document.getElementById("player-selection")
+const roundResult = document.getElementById("result")
+
 function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
     
