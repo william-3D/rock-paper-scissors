@@ -1,8 +1,18 @@
 sign = window.prompt("Rock, paper or scissors?");
 
-const computerChoice = document.getElementById("computer-choice")
-const userChoice = document.getElementById("user-choice")
-const roundResult = document.getElementById("result")
+const computerChoice = document.getElementById("computer-choice");
+const userChoice = document.getElementById("user-choice");
+const roundResult = document.getElementById("result");
+let userChoice; // globally saved so can be accessed wherever
+
+// to pick out created buttons
+const possibleChoices = document.querySelectorAll("button");
+
+// clicking any button makes something happen
+possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener("click", (e) => {
+    userChoice = e.target.id
+}))
+
 
 function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
