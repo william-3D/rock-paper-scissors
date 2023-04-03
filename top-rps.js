@@ -8,13 +8,13 @@ let userChoice; // globally saved so can be accessed wherever
 // to pick out created buttons
 const possibleChoices = document.querySelectorAll("button");
 
-// clicking button gets id
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener("click", (e) => {
-    userChoice = e.target.id; 
-    userChoiceDisplay.innerHTML = userChoice
+    userChoice = e.target.id; // clicking button gets id
+    userChoiceDisplay.innerHTML = userChoice;
+    getComputerChoice();
 }))
 
-
+// randomly generates computer choice
 function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
     
@@ -27,6 +27,7 @@ function getComputerChoice() {
     if (randomNumber === 3){
         computerChoice = "Scissors";
     }
+    computerChoiceDisplay.innerHTML = computerChoice;
 }
 
 
