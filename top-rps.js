@@ -1,7 +1,7 @@
 sign = window.prompt("Rock, paper or scissors?");
 
-const computerChoice = document.getElementById("computer-choice");
-const userChoice = document.getElementById("user-choice");
+const computerChoiceDisplay = document.getElementById("computer-choice");
+const userChoiceDisplay = document.getElementById("user-choice");
 const roundResult = document.getElementById("result");
 let userChoice; // globally saved so can be accessed wherever
 
