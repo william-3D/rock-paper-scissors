@@ -8,9 +8,10 @@ let userChoice; // globally saved so can be accessed wherever
 // to pick out created buttons
 const possibleChoices = document.querySelectorAll("button");
 
-// clicking any button makes something happen
+// clicking button gets id
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener("click", (e) => {
-    userChoice = e.target.id
+    userChoice = e.target.id; 
+    userChoiceDisplay.innerHTML = userChoice
 }))
 
 
