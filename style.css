@@ -43,3 +43,8 @@ body {
     background: var(--primary-color);
     color: #fff;
 }
+
+.header {
+    text-align: center;
+    margin: 1rem 0;
+}
