@@ -3,7 +3,7 @@
 }
 
 .modal {
-    /* display: none; */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -33,4 +33,14 @@
 .modal-content p {
     font-size: 1.2rem;
     margin-top: 1rem;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
