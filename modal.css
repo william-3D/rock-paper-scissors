@@ -1,3 +1,7 @@
+:root {
+    --modal-duration: 1s;
+}
+
 .modal {
     /* display: none; */
     position: fixed;
@@ -19,5 +23,5 @@
     padding: 3rem;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
     animation-name: modalopen;
-
+    animation-duration: var(--modal-duration);
 }
