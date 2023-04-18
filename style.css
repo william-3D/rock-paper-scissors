@@ -79,3 +79,15 @@ body {
 .choice {
     cursor: pointer;
 }
+
+@media(max-width: 700px) {
+    .choice {
+        font-size: 110px;
+    }
+}
+
+@media(max-width: 500px) {
+    .choice {
+        font-size: 80px;
+    }
+}
