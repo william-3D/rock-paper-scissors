@@ -34,24 +34,24 @@ function playRound() {
     restart.style.display = "inline-block";
     
     if (userChoice === computerChoice) {
-        result = "It's a tie!";
-    } if (userChoice === "rock" && computerChoice === "scissors") {
-        result = "You win! Rock beats scissors!";
+        return "It's a tie!";
+    } else if (userChoice === "rock" && computerChoice === "scissors") {
+        return "You win! Rock beats scissors!";
         
-    } if (userChoice === "rock" && computerChoice === "paper") {
-        result = "You lose! Paper beats rock!";
+    } else if (userChoice === "rock" && computerChoice === "paper") {
+        return "You lose! Paper beats rock!";
         
-    } if (userChoice === "paper" && computerChoice === "scissors") {
-        result = "You lose! Scissors beats paper!";
+    } else if (userChoice === "paper" && computerChoice === "scissors") {
+        return "You lose! Scissors beats paper!";
         
-    } if (userChoice === "paper" && computerChoice === "rock") {
-        result = "You win! Paper beats rock!";
+    } else if (userChoice === "paper" && computerChoice === "rock") {
+        return "You win! Paper beats rock!";
         
-    } if (userChoice === "scissors" && computerChoice === "paper") {
-        result = "You win! Scissors beats paper!";
+    } else if (userChoice === "scissors" && computerChoice === "paper") {
+        return "You win! Scissors beats paper!";
         
-    } if (userChoice === "scissors" && computerChoice === "rock") {
-        result = "You lose! Rock beats scissors!";
+    } else if (userChoice === "scissors" && computerChoice === "rock") {
+        return "You lose! Rock beats scissors!";
         
     }
     resultDisplay.innerHTML = result;
