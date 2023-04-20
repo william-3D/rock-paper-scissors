@@ -32,28 +32,28 @@ function getComputerChoice() {
 
 function playRound() {
     restart.style.display = "inline-block";
+    let score = 0;
     
     if (userChoice === computerChoice) {
         result = "It's a tie!";
-    } else if (userChoice === "rock" && computerChoice === "scissors") {
-        result = "You win! Rock beats scissors!";
-        
-    } else if (userChoice === "rock" && computerChoice === "paper") {
-        result = "You lose! Paper beats rock!";
-        
-    } else if (userChoice === "paper" && computerChoice === "scissors") {
-        result = "You lose! Scissors beats paper!";
-        
-    } else if (userChoice === "paper" && computerChoice === "rock") {
-        result = "You win! Paper beats rock!";
-        
-    } else if (userChoice === "scissors" && computerChoice === "paper") {
-        result = "You win! Scissors beats paper!";
-        
-    } else if (userChoice === "scissors" && computerChoice === "rock") {
-        result = "You lose! Rock beats scissors!";
-        
+    } else if ( 
+    (userChoice === "rock" && computerChoice === "scissors") ||
+    (userChoice === "paper" && computerChoice === "rock") ||
+    (userChoice === "scissors" && computerChoice === "paper")
+    ) {
+        result = "You win!";
+        score++;
+        document.getElementById('player-score').textContent = score;
+    } else if (
+    (userChoice === "rock" && computerChoice === "paper") ||
+    (userChoice === "paper" && computerChoice === "scissors") ||
+    (userChoice === "scissors" && computerChoice === "rock")
+    ) {
+        result = "You lose!";
+        score++;
+        document.getElementById('computer-score').textContent = score;
     }
     resultDisplay.innerHTML = result;
 }
 
+// make score reset when press restart
