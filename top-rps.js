@@ -33,7 +33,7 @@ function getComputerChoice() {
 }
 
 function playRound() {
-    // userChoice = userChoice.toLowerCase();
+    restart.style.display = "inline-block";
     
     if (userChoice === computerChoice) {
         result = "It's a tie!";
