@@ -1,5 +1,5 @@
 # rock-paper-scissors
-A simple implementation of grade-school classic “rock paper scissors”.
+A simple implementation of the grade-school classic “rock paper scissors”. An unguided project recommended by The Odin Project.
 
 Icons for the rock, paper & scissors buttons were self-drawn in Procreate.
 
